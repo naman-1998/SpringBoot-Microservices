@@ -8,6 +8,12 @@ private Integer id;
 private String name;
 private Date date;
 
+    public User(Integer id, String name, Date date) {
+        this.id = id;
+        this.name = name;
+        this.date = date;
+    }
+
     public Integer getId() {
         return id;
     }
