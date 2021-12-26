@@ -32,7 +32,7 @@ public class UserDaoService {
         return user;
     }
 
-    public User find0ne(int id) {
+    public User findOne(int id) {
         for (User user : users) {
             if (user.getId() == id) {
                 return user;
@@ -50,4 +50,6 @@ public class UserDaoService {
         }
         return null;
     }
+
+
 }
