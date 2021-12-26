@@ -1,11 +1,17 @@
 
 package com.example.udemyCourse.springBoot.Entity;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class User {
 private Integer id;
+
+@Size(min = 3, message = "Name should have atleast 3 characters!!")
 private String name;
+
+@Past
 private Date date;
 
     public User(Integer id, String name, Date date) {
